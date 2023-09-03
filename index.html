@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body >
+    <div id="home" class="bg-min-dark py-5 min-vh-100 position-relative">
+        <nav id="navbar" class="position-fixed top-0 bottom-0 bg-min-dark z-3">
+            <div class="nav-col h-100 bg-white d-flex flex-column justify-content-between align-items-center py-3">
+                <img src="img/logo.png" alt="Logo">
+                <div class="open-close">
+                    <i id="openNav" class="fa-solid fa-bars fa-2x d-block"></i>
+                    <i id="closeNav" class="fa-solid fa-xmark fa-3x d-none"></i>
+                </div>
+                <div>
+                    <a href="#"><i class="fa-solid fa-globe d-block text-black"></i></a>
+                    <a href="#"><i class="fa-solid fa-share-nodes text-black"></i></a>
+                </div>
+            </div>
+            <div class="nav-links py-4 px-4 d-flex flex-column justify-content-between h-100">
+                <ul class="links list-unstyled">
+                    <li class="py-2"><a id="searchLink" href="#">Search</a></li>
+                    <li class="py-2"><a id="categoriesLink" href="#">Categories</a></li>
+                    <li class="py-2"><a id="areaLink" href="#">Area</a></li>
+                    <li class="py-2"><a id="ingredientsLink" href="#">Ingredients</a></li>
+                    <li class="py-2"><a id="contactLink" href="#">Contact Us</a></li>
+                </ul>
+                <div class="social-links">
+                    <ul class="social list-unstyled m-1">
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-solid fa-globe"></i></a>
+                        </li>
+                    </ul>
+                    <div class="copy-right text-white">Copyright Â© 2019 All Rights
+                    Reserved.</div>
+                </div>
+            </div>
+        </nav>
+        <div id="container" class="container">
+            <div id="searchInp" class="input-container  justify-content-evenly">
+                <input  id="searchName" type="text" placeholder="Search By Name" class="form-control me-3 bg-transparent text-capitalize text-white">
+                <input id="searchFirst" type="text" placeholder="Search By First Letter" class="form-control bg-transparent text-white">
+             </div>
+             
+             <form id="loginInput" class="input-container login justify-content-center flex-wrap align-content-center">
+                <div class="w-50 px-3">
+                    <input id="userName" type="text" placeholder="Enter your first name ......" class="form-control bg-white mb-4">
+                    <p id="alertName" class="alert alert-danger d-none">name must contain at least 3 to 10 characters and Special characters and numbers not allowed</p>
+                </div>
+                
+                <div class="w-50 px-3">
+                    <input id="userEmail" type="email" placeholder="Enter your email ......" class="form-control bg-white mb-4">
+                    <p id="alertEmail" class="alert alert-danger d-none">Email not valid *exemple@yyy.zzz</p>
+                </div>
+                <div class="w-50 px-3">
+                    <input id="userPhone" type="tel" placeholder="Enter your phone ......" class="form-control bg-white mb-4">
+                    <p id="alertPhone" class="alert alert-danger d-none">Enter valid Phone Number</p>
+                </div>
+                <div class="w-50 px-3">
+                    <input id="userAge" type="number" placeholder="Enter your age ......" class="form-control bg-white mb-4">
+                    <p id="alertAge" class="alert alert-danger d-none">Enter valid age</p>
+                </div>
+                <div class="w-50 px-3">
+                    <input id="userPass" type="password" placeholder="Enter your password ......" class="form-control bg-white mb-4">
+                    <p id="alertPass" class="alert alert-danger d-none">Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+                </div>
+                <div class="w-50 px-3">
+                    <input id="userRepass" type="password" placeholder="repassword........" class="form-control bg-white mb-4">
+                    <p id="alertRepass" class="alert alert-danger d-none">Enter right pas</p>
+                </div>
+                <p id="welcome" class="w-100 text-success"></p>
+                <button id="SubmitBtn" type="button" class="btn btn-outline-danger disabled mx-1">Submit</button>
+            </form> 
+            <div id="maelsList"  class="row g-4">
+                <!-- <div class="col-md-3">
+                    <div class="content position-relative overflow-hidden rounded-3">
+                        <img src="1572519192263.jpg" alt="" class="w-100">
+                        <div class="mael-name position-absolute h-100 start-0 end-0 d-flex align-items-center">
+                            <h2>Cabab</h2>
+                        </div>
+                    </div>
+                </div> -->
+            </div> 
+        </div>
+    </div>
+    <div id="loading" class="loading">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+    <script src="JS/index.js"></script>
+    <script src="JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+</body>
+</html>
